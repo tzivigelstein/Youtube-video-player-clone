@@ -76,10 +76,17 @@ body {
   display: grid;
   place-items: center;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  width: 100%;
+}
+
+.videoContainer:fullscreen .video {
+  height: 100vh;
 }
 
 .video {
   width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
 }
 
 .videoTitle {
